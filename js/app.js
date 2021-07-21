@@ -1,1 +1,1 @@
- const submitButton = document.createElementquerySelector('.submit');
+ const submitButton = document.querySelector('#submit');

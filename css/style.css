@@ -19,7 +19,18 @@ nav{
     flex-direction: column;
     align-items:center;
     padding: 1rem;
+    padding: 0 !important;
 }
 .bodi form{
-    width:60%;
+    width:50%;
+    background: #e3e3ffa2;
+    padding: 2.5rem;
+}
+.bodi form input,
+ .bodi form textarea{
+    border-radius: 0;
+    border: 0;
+}
+.bodi form textarea{
+    min-height: 10rem;
 }

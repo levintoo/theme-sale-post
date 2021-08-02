@@ -29,25 +29,25 @@
     </header>
 
     <section class="bodi">
-        <form action="./php/insert-post.php" method="post">
+        <form action="http://localhost:7882/themesell/php/insert-post.php" method="post">
 
             <div class="mb-3">
                 <label class="form-label">Title</label>
-                <input type="text" class="form-control">
+                <input type="text" class="form-control" name="title">
             </div>
 
             <div class="mb-3">
                 <label class="form-label">Seo Title</label>
-                <input type="text" class="form-control">
+                <input type="text" class="form-control" name="seotitle">
             </div>
 
             <div class="mb-3">
                 <label class="form-label">Category</label>
-                <input type="text" class="form-control">
+                <input type="text" class="form-control" name="category">
             </div>
             <div class="mb-3">
                 <label class="form-label">Content</label>
-                <textarea type="text"  placeholder="Input some content here..." class="form-control"></textarea>
+                <textarea type="text"  placeholder="Input some content here..." class="form-control" name="content"></textarea>
             </div>
 
 

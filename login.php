@@ -9,7 +9,7 @@
     <link rel="stylesheet" href="./css/style.css">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
         integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
-    <title>Themesell</title></head>
+    <title>login</title></head>
 
 <body>
 
@@ -28,10 +28,20 @@
     </header>
 
     <section class="bodi">
-        <?php
-            require_once("php/getPosts.php");
-            getMainPost();
-        ?>
+        <form action="localhost:7882/themesell/phpadmin/insert-post.php" method="post">
+
+              <div class="mb-3">
+                <label  class="form-label">email</label>
+                <input type="email" name="email" class="form-control" >
+              </div>
+              <div class="mb-3">
+                <label  class="form-label">password</label>
+                <input type="password" name="password" class="form-control" >
+              </div>
+
+
+            <button class="btn btn-success">Submit</button>
+          </form>
 
     </section>
     <!-- JavaScript Bundle with Popper -->
@@ -42,3 +52,4 @@
 </body>
 
 </html>
+       

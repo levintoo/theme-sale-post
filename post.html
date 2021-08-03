@@ -28,10 +28,30 @@
     </header>
 
     <section class="bodi">
-        <?php
-            require_once("php/getPosts.php");
-            getMainPost();
-        ?>
+        <form action="localhost:7882/themesell/phpadmin/insert-post.php" method="post">
+
+            <div class="mb-3">
+              <label class="form-label">Title</label>
+              <input type="title" name="title" class="form-control" >
+            </div>
+
+            <div class="mb-3">
+                <label  class="form-label">Seo Title</label>
+                <input type="text" name="seotitle" class="form-control" >
+              </div>
+
+              <div class="mb-3">
+                <label  class="form-label">Category</label>
+                <input type="category" name="category" class="form-control" >
+              </div>
+              <div class="mb-3">
+                <label  class="form-label">Content</label>
+                <textarea type="content" name="content" class="form-control" ></textarea>
+              </div>
+
+
+            <button class="btn btn-success">Submit</button>
+          </form>
 
     </section>
     <!-- JavaScript Bundle with Popper -->
@@ -42,3 +62,4 @@
 </body>
 
 </html>
+       

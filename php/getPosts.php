@@ -11,11 +11,12 @@
             WHERE has_category.post= " . $row['id'];
             $cat_result = mysqli_query($db, $query);
             $categories = "";
-            // while ($category = mysqli_fetch_array($cat_result)) {
-            //     $categories .= '<span class="badge badge-primary fs-5">'. 
-            //     $category['name'].'</span>';
-            //         }
-            echo '<article class="col-md-4 p-0">
+        //    while ($category = mysqli_fetch_array($cat_result)){
+        //        $categories .= '<span class="badge badge-primary fs-5">'. $category['name'].'</span>';
+        //    }
+
+            echo '
+            <article class="col-md-4 p-0">
             <div class="m-1 shadow">
                 <img src="img/'. $row['id'].'.png" alt="'. $row['title'].'" class="img-fluid">
                 <div class="article-content px-2 py-1">

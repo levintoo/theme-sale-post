@@ -29,30 +29,10 @@
     </header>
 
     <section class="bodi">
-        <form action="http://localhost:7882/themesell/php/insert-post.php" method="post">
-            <input type="hidden" name="author" value="1">
-            <div class="mb-3">
-                <label class="form-label">Title</label>
-                <input type="text" class="form-control" name="title">
-            </div>
-
-            <div class="mb-3">
-                <label class="form-label">Seo Title</label>
-                <input type="text" class="form-control" name="seotitle">
-            </div>
-
-            <div class="mb-3">
-                <label class="form-label">Category</label>
-                <input type="text" class="form-control" name="category">
-            </div>
-            <div class="mb-3">
-                <label class="form-label">Content</label>
-                <textarea type="text"  placeholder="Input some content here..." class="form-control" name="content"></textarea>
-            </div>
-
-
-            <button type="submit" id="submit" class="btn btn-success">Submit</button>
-        </form>
+        <?php
+            require_once("php/getPosts.php");
+            getMainPost();
+        ?>
 
     </section>
     <!-- JavaScript Bundle with Popper -->

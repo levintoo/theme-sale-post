@@ -27,5 +27,5 @@
 
     }
 
-    header('Loacation : http://localhost:7882/themesell/php/insert-post.php')
+    header('Loacation : http://localhost:7882/themesell/phpadmin/insert-post.php')
 ?>

@@ -6,7 +6,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <!-- CSS only -->
-    <link rel="stylesheet" href="./css/style.css">
+    <link rel="stylesheet" href="../css/style.css">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
         integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
     <title>login</title></head>
@@ -24,15 +24,15 @@
     </nav>
 
     <header class="big-title d-flex justify-content-center align-items-center">
-        <h1>Insert Post</h1>
+        <h1>login</h1>
     </header>
 
     <section class="bodi">
-        <form action="localhost:7882/themesell/phpadmin/insert-post.php" method="post">
+        <form action="http://localhost:7882/themesell/phpadmin/login.php" method="post">
 
               <div class="mb-3">
                 <label  class="form-label">email</label>
-                <input type="email" name="email" class="form-control" >
+                <input type="text" name="email" class="form-control" >
               </div>
               <div class="mb-3">
                 <label  class="form-label">password</label>
@@ -40,7 +40,7 @@
               </div>
 
 
-            <button class="btn btn-success">Submit</button>
+            <button class="btn btn-success" type="submit">Submit</button>
           </form>
 
     </section>
